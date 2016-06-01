@@ -1,3 +1,4 @@
+{{ember-wormhole-placeholder registry=registry as="head" dom=dom}}
 {{#if needsBindAttr}}
   {{! Ember version 1.10 does not support direct bound attributes and
       must use bind-attr. This causes a deprecation warning in Ember 1.13+ }}
@@ -5,3 +6,4 @@
 {{else}}
   <link rel="icon" href={{href}} />
 {{/if}}
+{{ember-wormhole-placeholder registry=registry as="tail" dom=dom}}
